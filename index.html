@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+<body>
+  <header class="header">
+    <div class="player">
+      <div class="player-controls">
+        <button class="play-prev player-icon"></button>
+        <button class="play player-icon"></button>
+        <button class="play-next player-icon"></button>
+        <div class="settings-button"></div>
+      </div>
+      <ul class="play-list"></ul>
+    </div>
+    
+    <div class="settings">
+      <!--<div class="settings-button">Настройки</div>-->
+      <div class="setting-container">
+        <div class="settings-inner">
+          <div class="settings-item" >
+            <p class="item-text">Время:</p>
+            <div class="item-button button-time"></div>
+          </div>
+          <div class="settings-item" >
+            <p class="item-text">Дата:</p>
+            <div class="item-button button-date"></div>
+          </div>
+          <div class="settings-item" >
+            <p class="item-text">Приветствие:</p>
+            <div class="item-button button-greeting"></div>
+          </div>
+          <div class="settings-item" >
+            <p class="item-text">Погода:</p>
+            <div class="item-button button-weather"></div>
+          </div>
+          <div class="settings-item" >
+            <p class="item-text">Плеер:</p>
+            <div class="item-button button-player"></div>
+          </div>
+          <div class="settings-item" >
+            <p class="item-text">Цитаты:</p>
+            <div class="item-button button-quotes"></div>
+          </div>
+          <div class="settings-item flex-collum" >
+            <p class="item-text del-margin">Плейлист:</p>
+            <div class="button-box">
+              <div class="box-item">
+                <div class="item-button track-morning">Утро</div>
+                <div class="item-button track-afternoon">День</div>
+              </div>
+              <div class="box-item">
+                <div class="item-button track-evening">Вечер</div>
+                <div class="item-button track-night">Ночь</div>
+              </div>
+            </div>
+          </div>
+          <div class="settings-item flex-collum" >
+            <p class="item-text del-margin">Фото:</p>
+            <div class="button-box">
+              <div class="box-item">
+                <div class="item-button foto-morning">Утро</div>
+                <div class="item-button foto-afternoon">День</div>
+              </div>
+              <div class="box-item">
+                <div class="item-button foto-evening">Вечер</div>
+                <div class="item-button foto-night">Ночь</div>
+              </div>
+            </div>
+          </div>
+          <div class="settings-item flex-collum" >
+            <p class="item-text del-margin">Пожелания:</p>
+            <div class="button-box">
+              <div class="box-item">
+                <div class="item-button quotes-morning">Утро</div>
+                <div class="item-button quotes-afternoon">День</div>
+              </div>
+              <div class="box-item">
+                <div class="item-button quotes-evening">Вечер</div>
+                <div class="item-button quotes-night">Ночь</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="weather">
+      <input type="text" class="city" />
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+    
+  </main>
+  <footer class="footer">
+    <button class="change-quote"></button>
+    <div>
+      <div class="quote"></div>
+      <div class="author"></div>
+    </div>
+  </footer>
+  <script type="module" src="js/script.js"></script>
+</body>
+</html>
